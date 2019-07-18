@@ -29,24 +29,30 @@ section{
 	padding: 1rem 0;
 	min-height: 300px;
 	display: block;
-
-
+}
+.flex-container{
+	display: flex;
+	flex-direction: row; /*default Einstellung*/
+	justify-content: center; /*x achse*/
+	align-items: center; /*y achse*/
 }
 
-
 .col{
-	width: 100%;
+	/* width: 100%; */
 	min-width: 20px;
-	min-height: 50px;
+	min-height: 70px;
 	margin: 10px;
 }
 
 .trolley-grey{
 	background: #7D7C84;
+	flex-grow: 2; /*wachsen*/
+	order: 1;
 }
 
 .sea-green{
 	background: #2D93AD;
+	flex-grow: 1;
 
 }
 
@@ -57,12 +63,16 @@ section{
 
 .black{
 	background: #000;
+
 }
 
 .orange{
 	background: orange;
+	flex-grow: 3;
+	order: 2; /*Reichenfolge ändern*/
 }
 
 .olive{
 	background: olive;
+	flex-grow: 5;
 }
